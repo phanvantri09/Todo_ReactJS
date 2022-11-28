@@ -1,0 +1,30 @@
+.list-todo-container{
+    .add-todo{
+        display: flex;
+        justify-content: space-between;
+        .input-todo{
+            width: 70%;
+            height: 50px;
+        }
+        .btn-add{
+            width: 20%;
+            height: 50px;
+        }
+    }
+    .list-todo-element{
+        width: 500px;
+        margin-top: 50px;
+        
+        .todo-child{
+            &:first-child{
+                border-top: 1px solid gainsboro;
+            }
+            display: flex;
+            justify-content: space-between;
+            height: 55px;
+            margin: 10px auto;
+            border-bottom: 1px solid gainsboro;
+        }
+    }
+}
+ 

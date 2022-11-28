@@ -6,23 +6,24 @@ import ListTodo from './views/Todos/ListTodo.js';
 import Nav from './views/Nav/Nav.js'
 import Home from './views/Home/Home.js';
 import {
-  BrowserRouter as Router,
-  Switch,
+  BrowserRouter ,
+  Routes ,
   Route,
   Link
 } from "react-router-dom";
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="App">
       <Nav/>
       <header className="App-header">
-      
-        <p>
-          Todo App With Trí
-        </p>
-        <ListTodo/>
-        
+        {/* react- roter 
+        exact  đúng name mới load, switch đã dc thay thế bởi routers */}
+        <Routes >
+        <Route exact path="/" element={<Home/>}/>
+        <Route exact path="/todo" element={<ListTodo/>}/>
+        <Route exact path="/users" element={<ListTodo/>}/>
+        </Routes >
 
       </header>
       <ToastContainer
@@ -40,7 +41,7 @@ function App() {
         {/* Same as */}
       <ToastContainer />
     </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 

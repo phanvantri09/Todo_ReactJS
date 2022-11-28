@@ -4,10 +4,9 @@ class Nav extends React.Component {
     render () {
         return(
             <div class="topnav">
-                <a class="active" href="#home">Home</a>
-                <a href="#news">News</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
+                <a class="active" href="/">Home</a>
+                <a href="/users">User - todo</a>
+                <a href="/todo">Todo</a>
             </div>
         )
     }
